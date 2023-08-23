@@ -1,7 +1,165 @@
-<body>
-  <h1>Elena Grasovskaya</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equip="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="icon" href="images/avatar-small.png">
+    <link rel="stylesheet" href="fonts/font-mfizz.css">
+    <title>Elena Grasovskaya - a web developer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contacts">contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>I'm Elena,</h1>
+      <h2>a web developer.</h2>
+
+      <div class="animated-bird1">
+        <div class="animated-bird">
+          <img class="animated-wing-left" src="images/wing-left.png" />
+          <img class="animated-wing-right" src="images/wing-right.png" />
+        </div>
+      </div>
+      <div class="animated-bird2">
+        <div class="animated-bird">
+          <img class="animated-wing-left" src="images/wing-left.png" />
+          <img class="animated-wing-right" src="images/wing-right.png" />
+        </div>
+      </div>
+      <img class="animated-cloud1" src="images/cloud.png" />
+      <img class="hero-background" src="images/hero.png" />
+    </section>
+
+    <section class="description">
+      <img src="images/avatar.png" />
+
+      <h2>Hi.</h2>
+      <div class="flag">
+        <div class="flag-blue">
+          <p>
+            I am a self taught web developer based in Odessa,
+            Ukraine.
+          </p>
+        </div>
+        <div class="flag-yellow">
+          <p>
+            Web development for me is a fine combination of beauty and order,
+            and I enjoy creating useful and elegant products both inside and
+            outside.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="heading">
+        <img src="images/brush&pencil.png" />
+        <h2>What do I do</h2>
+      </div>
+
+      <p>I design and build web pages and apps</p>
+      <div class="heading">
+        <img src="images/gears.png" />
+        <h2>Technologies and products I use</h2>
+      </div>
+      <div id="skills_table">
+          <i class="icon-html5-alt"></i><p class="skill_table_element">HTML</p><i class="icon-css3-alt"></i><p class="skill_table_element">CSS</p>
+          <i class="icon-sass"></i><p class="skill_table_element">SASS</p><i class="icon-javascript"></i><p class="skill_table_element">JavaScript</p>
+          <i class="icon-reactjs"></i><p class="skill_table_element">React</p><i class="icon-git"></i><p class="skill_table_element">Git</p>
+          <img src="images/GraphQL_Logo.svg.png" ><p class="skill_table_element">GraphQL</p>
+          <img src="images/Adobe-Acrobat-XI-icon.png" ><p class="skill_table_element">Adobe Acrobat</p>
+          <img src="images/Adobe-Ae-icon.png" ><p class="skill_table_element">Adobe After Effect</p>
+          <img src="images/Adobe-Ai-icon.png" ><p class="skill_table_element">Adobe Illustrator</p>
+          <img src="images/Adobe-Ps-icon.png" ><p class="skill_table_element">Adobe Photoshop</p>
+          <img src="images/Adobe-Mu-icon.png" ><p class="skill_table_element">Adobe Muse</p>
+        </div>
+    </section>
+    <section class="projects">
+      <div class="heading" id ="projects">
+        <img src="images/projects.png" />
+        <h2>My projects</h2>
+      </div>
+
+      <h3><a href="https://libramebel.od.ua/">libramebel.od.ua</a></h3>
+      <p>A gallery webpage for a furniture company built with HTML CSS ad JS</p>
+      <div class="project">
+        <video controls width="400" poster="/images/LibraMebeBig_cover.png">
+          <source src="video/LibraMebel.mp4" type="video/mp4" />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <video controls height="300" poster="/images/LibraMebeSmall_cover.png">
+          <source src="video/LibraMebelSmall.mp4" type="video/mp4" />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <h3><a href="http://lesport-fit-tour.site/">lesport.site</a></h3>
+      <p>
+        A landing page for personal fitness tour operator built with HTML CSS JS
+        according to BEM methodology
+      </p>
+
+      <div class="project" >
+        <video controls width="400" poster="/images/LeSport_FitTour_Cover.png">
+          <source src="video/Fit_Tour.mp4" type="video/mp4"  />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <video controls height="300" poster="/images/FitTourSmall.png">
+          <source src="video/FitTourSmall.mp4" type="video/mp4" />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <h3><a href="https://lesport.site/">lesport-fit-tour.site</a></h3>
+      <p>
+        A landing page for personal fitness coach built with HTML CSS with video
+        designed in Adobe AfterEffect
+      </p>
+
+      <div class="project">
+        <video controls width="400" poster="/images/LeSportBig_cover.png">
+          <source src="video/Lesport.mp4" type="video/mp4" />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <video controls height="300" poster="/images/LeSportSmall_cover.png">
+          <source src="video/LesportSmall.mp4" type="video/mp4" />
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="heading"> 
+        <h2>Contacts</h2>
+        </div>
+        <div class = "contacts_table">
+
+        <i class="fa fa-envelope-o" aria-hidden="true"></i><p>Email:</p><a href="mailto:elenagrasovskaya@gmail.com">elenagrasovskaya@gmail.com</a> 
+        <i class="fa fa-github" aria-hidden="true"></i> <p>Github:</p><a href="https://github.com/ElenaGrasovskaya">ElenaGrasovskaya</a>
+        <i class="fa fa-file" aria-hidden="true"></i> <p>CV:</p><a href="https://drive.google.com/file/d/1ktwq-WYWlA_0uMkrwnTtSYFxy5uwby5q/view?usp=sharing">Download</a>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Elena Grasovskaya 2022</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,149 @@
+.hero {
+  overflow: hidden;
+  position: relative;
+
+  background-color: $color-sky;
+  & h1 {
+    font-size: 5rem;
+    font-family: "Segoe Print";
+    text-align: center;
+    line-height: 10rem;
+    color:$color-dark-green;
+   
+  }
+  & h2 {
+    display: block;
+    z-index: 900;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    color:$color-dark-green;
+    
+  }
+}
+
+.hero-background {
+  display: block;
+  width: 70%;
+  margin: 30rem auto 0 auto;
+
+}
+
+.animated-bird1 {
+  position: absolute;
+  z-index: 1000;
+
+  animation: fly1 30s infinite;
+  animation-timing-function: linear;
+}
+
+.animated-bird2 {
+  position: absolute;
+  z-index: 1000;
+  left: -20vw;
+
+  animation: fly2 40s infinite;
+  animation-timing-function: linear;
+  animation-delay: 10s;
+}
+
+.animated-cloud1 {
+  position: absolute;
+  z-index: 10;
+  opacity: 0.5;
+  width: 40vw;
+
+  animation: cloudMove 20s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fly1 {
+  0% {
+    transform: scale(0.5);
+
+    opacity: 0.5;
+    left: -10vw;
+    top: 30vh;
+  }
+
+  25% {
+    opacity: 0.7;
+    left: 15vw;
+    top: 32vh;
+  }
+  50% {
+    opacity: 1;
+    left: 50vw;
+    top: 35vh;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.7;
+    left: 85vw;
+    top: 33vh;
+  }
+  100% {
+    opacity: 0.5;
+    left: 110vw;
+    top: 30vh;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes fly2 {
+  0% {
+    transform: scale(0.5);
+
+    opacity: 0.5;
+    left: -20vw;
+    top: 10vh;
+  }
+
+  25% {
+    opacity: 0.7;
+    left: 15vw;
+    top: 8vh;
+  }
+  50% {
+    opacity: 1;
+    left: 50vw;
+    top: 12vh;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.7;
+    left: 85vw;
+    top: 10vh;
+  }
+  100% {
+    opacity: 0.5;
+    left: 110vw;
+    top: 8vh;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes cloudMove {
+  0% {
+    left: 20vw;
+    top: 10vh;
+  }
+
+  25% {
+    left: 22vw;
+    top: 12vh;
+  }
+  50% {
+    left: 20vw;
+    top: 10vh;
+  }
+  75% {
+    left: 22vw;
+    top: 8vh;
+  }
+  100% {
+    left: 20vw;
+    top: 10vh;
+  }
+}

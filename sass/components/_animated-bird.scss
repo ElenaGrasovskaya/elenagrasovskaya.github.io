@@ -1,0 +1,66 @@
+.animated-bird {
+  position: absolute;
+  width: 5rem;
+  top: 5rem;
+  left: -10rem;
+}
+
+.animated-wing-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  animation: wing-left 3s infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+.animated-wing-right {
+  position: absolute;
+  top: 0;
+  left: 1.4rem;
+  width: 3rem;
+  animation: wing-right 3s infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+@keyframes wing-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+
+  75% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wing-right {
+  0% {
+    transform: rotate(20deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(20deg);
+  }
+}

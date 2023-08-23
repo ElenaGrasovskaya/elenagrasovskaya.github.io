@@ -1,0 +1,28 @@
+$color-sky: #e7f8ff;
+$color-light-green: #c5e9d9;
+$color-green: #ade0ca;
+$color-dark-green: #5d786c;
+$color-yellow: #fcfcc8;
+$color-brown: #7c736a;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@import "components/_header";
+@import "components/_hero";
+@import "components/_animated-bird";
+@import "components/_description";
+@import "components/_skills";
+@import "components/_projects";
+@import "components/_utils";
+@import "components/_contacts";
+@import "components/_footer";
